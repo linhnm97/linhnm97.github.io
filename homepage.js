@@ -1,0 +1,1 @@
+let titlePost = document.getElementById("title- post");

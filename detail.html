@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- header -->
@@ -41,20 +42,31 @@
     <!-- BODY -->
     <div id = "parent-body"> 
         <div class= "wrap-container">
-            <div id = "opening-post">
-                <h1 id = "title- post">We're celebrating the release of Cyberpunk 2077 with a huge giveaway!</h1>
-                <div id ="date-post">27/12/2020</div>
-                <img id = "image-header-post" src ="Ne8sZJS.jpg" class= "image-post">
-            </div> 
-            <div id = "body-post">
-                <div></div>
-                <p>Cyberpunk 2077 has arrived and we couldn't be more excited! You've got the incredible graphics. You've got the endless roaming in an open world that never seems to end. You got the neon-infested, dreary dystopia. What more could you need? Well, how about a sweet Collector's Edition of this unforgettable game? </p>  
-                <br>
-                <p>We've partnered with GOG.com to bring you a special, celebratory giveaway this month. To mark the occasion, we're giving away one grand prize and three runner-up prizes!</p>
+            <div id= "main-post">
+                <div id = "opening-post">
+                    <h1 id = "title- post">We're celebrating the release of Cyberpunk 2077 with a huge giveaway!</h1>
+                    <div id ="date-post">27/12/2020</div>
+                    <img id = "image-header-post" src ="Ne8sZJS.jpg" class= "image-post">
+                </div> 
+                <div id = "body-post">
+                    <div></div>
+                    <p>Cyberpunk 2077 has arrived and we couldn't be more excited! You've got the incredible graphics. You've got the endless roaming in an open world that never seems to end. You got the neon-infested, dreary dystopia. What more could you need? Well, how about a sweet Collector's Edition of this unforgettable game? </p>  
+                    <br>
+                    <p>We've partnered with GOG.com to bring you a special, celebratory giveaway this month. To mark the occasion, we're giving away one grand prize and three runner-up prizes!</p>
+                </div>
             </div>
                 <!-- Comment -->
+    
+                <h1 id = "title-comment">Comment</h1>
+                <form id = "write-comment">
+                    <img id= "main-user-image" src ="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-9/107527392_2617253271827987_4102036841548742132_o.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=FaE1TP32QuYAX_sOMhb&_nc_ht=scontent.fhan2-2.fna&oh=8bc592e095e076de48922bcbe1260c78&oe=600E512D" class = "account-image">
+                        <!-- <input type="text" id = "text" placeholder="Write an review or comment"> -->
+                    <div id = "user-comment">
+                        <div class="textarea" id = "text" tabindex="0" role="textbox" aria-multiline="true" contenteditable="PLAINTEXT-ONLY" data-role="editable" aria-label="Write an comment" ></div>
+                        <button><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    </form>
                 <div id= "comment">
-                    
                     <div class = "comment" id= "first-comment">
                         <div class= "left-comment">
                             <img class ="account-image" src  = "https://forums.pcgamer.com/data/avatars/s/0/210.jpg?1578936943">
@@ -64,6 +76,10 @@
                             <div class = "date-comment">Dec 23, 2020</div>
                             <p>The linked "comment on this thread" button is broken in the gleam.</p> <br>
                             <p>I'm not sure if I ever purchased anything on GOG! I've had an account for a while, I've just been broke. Apparently my only game on the site is Symmetry lol.</p>
+                            <div class= "btn-reaction">
+                                <button class = "like">Like</button>
+                                <button class = "reply">Reply</button>
+                            </div>
                         </div>
                     </div>
                     <div class = "comment" id= "second-comment">
@@ -75,15 +91,22 @@
                             <div class = "date-comment">Dec 23, 2020</div>
                             <p>The linked "comment on this thread" button is broken in the gleam.</p> <br>
                             <p>I'm not sure if I ever purchased anything on GOG! I've had an account for a while, I've just been broke. Apparently my only game on the site is Symmetry lol.</p>
+                            <div class = "btn-reaction">
+                                <button class = "like">Like</button>
+                                <button class = "reply" style= "border: none;"><img style="width: 15px; padding-right: 2px" src = "./Webp.net-resizeimage.png">Reply</button>
+                            </div>
                         </div>
                     </div>
                 </div>
         </div> 
-        <div id = "bside-post"></div>
+        <div id = "bside-post">
+            <h3>Recent post</h3>
+        </div>
     </div>   
-    <!-- <div id= "footer">
+    <div id= "footer">
         <p>PC Gamer is part of Future plc, an international media group and leading digital publisher. Visit our corporate site.</p>
         <a id= "contact" href="#">About Us</a>
-    </div> -->
+    </div>
+    <script src = "./index.js"></script>
 </body>
 </html>
